@@ -16,7 +16,6 @@ body {
   aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   border-radius: 25px;
 }
@@ -63,9 +62,23 @@ body {
   height: 100%;
   aspect-ratio: 1 / 1;
   background-color: #C59560;
+  transition: background-color 0.2s ease-in-out;
+  color: #3338A0;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.move-message {
+.game-button:hover {
+  background-color: #e2b483;
+}
+
+.game-button:active {
+  background-color: #ad7b46;
+  transform: scale(0.99);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+.game-message {
   color: #3338A0;
   font-weight: 700;
   font-size: 1.3rem;
@@ -87,7 +100,17 @@ body {
   align-items: center;
   border: solid #3339A0;
   color: #3339A0;
-  font-W: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.game-reset-button:hover {
+    background-color: #e2b483;
+}
+
+.game-reset-button:active {
+  background-color: #ad7b46;
+  transform: scale(0.99);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
 }
 
 .game-score {
